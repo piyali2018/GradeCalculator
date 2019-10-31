@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="1"
+    android:id="@+id/tableLayout">
+
+    <TableRow android:padding="5dip">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_span="3"
+            android:gravity="center_horizontal"
+            android:text="@string/grade_calculator"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/firstRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/iosText"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:text="@string/ios"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ios"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="-80dp"
+            android:inputType="text|number"
+            android:padding="5dp"
+            android:background="@drawable/custom_edit_text"
+            android:imeOptions="actionDone"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/secondRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/androidText"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/android"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/android"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="-80dp"
+            android:layout_marginTop="20dp"
+            android:inputType="text|number"
+            android:padding="5dp"
+            android:background="@drawable/custom_edit_text"
+            android:imeOptions="actionDone"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/thirdRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/swiftText"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/swift"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/swift"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="-80dp"
+            android:layout_marginTop="20dp"
+            android:inputType="text|number"
+            android:padding="5dp"
+            android:background="@drawable/custom_edit_text"
+            android:imeOptions="actionDone"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/FourthRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/javaText"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/java"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/java"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="-80dp"
+            android:layout_marginTop="20dp"
+            android:inputType="text|number"
+            android:padding="5dp"
+            android:background="@drawable/custom_edit_text"
+            android:imeOptions="actionDone"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/min"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_span="1"
+            android:layout_column="0"
+            android:text="@string/min"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/avg"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="1"
+            android:layout_column="1"
+            android:text="@string/avg"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/max"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_span="1"
+            android:layout_column="2"
+            android:text="@string/max"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+</TableLayout>
